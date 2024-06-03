@@ -44,7 +44,10 @@
         item.appendChild(btnDel);
         span.textContent = currentInput;
         btnDel.textContent = "Delete";
-
+        list.appendChild(item);
+        btnDel.addEventListener("click", (e) => {
+          item.remove;
+        });
       }
     </script>
   </body>
