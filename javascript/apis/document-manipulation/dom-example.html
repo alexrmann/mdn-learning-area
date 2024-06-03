@@ -4,6 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple DOM example</title>
+
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
+    
   </head>
 
   <body>
@@ -41,19 +52,29 @@
 
       // ### Moving and removing elements
 
-      sect.appendChild(linkPara); 
+      sect.appendChild(linkPara);
       // Moves linkPara to end of sect
 
-      // sect.removeChild(linkPara); 
+      // sect.removeChild(linkPara);
       // Remove a child node from a parent node
 
-      linkPara.remove(); 
+      linkPara.remove();
       // A self-referential way to remove a node
 
-      // linkPara.parentNode.removeChild(linkPara); 
+      // linkPara.parentNode.removeChild(linkPara);
       // Used for old browsers
 
       // ### Manipulating styles
+
+      // Add inline styles
+      /*       para.style.color = "white";
+      para.style.backgroundColor = "black";
+      para.style.padding = "10px";
+      para.style.width = "250px";
+      para.style.textAlign = "center"; */
+
+      // Set an element's class
+      para.setAttribute("class", "highlight");
 
     </script>
   </body>
