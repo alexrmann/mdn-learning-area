@@ -19,12 +19,12 @@
     </section>
 
     <script>
-      // Basic DOM Manipulation Intro
+      // ### Basic DOM Manipulation Intro
       const link = document.querySelector("a");
       link.textContent = "Mozilla Developer Network";
       link.href = "https://developer.mozilla.org";
 
-      // Creating and placing new nodes
+      // ### Creating and placing new nodes
 
       // pt. 1, append a new p element to the existing section element
       const sect = document.querySelector("section");
@@ -39,6 +39,21 @@
       const linkPara = document.querySelector("p");
       linkPara.appendChild(text);
 
+      // ### Moving and removing elements
+
+      sect.appendChild(linkPara); 
+      // Moves linkPara to end of sect
+
+      // sect.removeChild(linkPara); 
+      // Remove a child node from a parent node
+
+      linkPara.remove(); 
+      // A self-referential way to remove a node
+
+      // linkPara.parentNode.removeChild(linkPara); 
+      // Used for old browsers
+
+      // ### Manipulating styles
 
     </script>
   </body>
