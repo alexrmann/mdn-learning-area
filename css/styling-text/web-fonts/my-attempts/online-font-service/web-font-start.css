@@ -1,0 +1,47 @@
+.stardos-stencil-regular {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stardos-stencil-bold {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* General setup */
+
+html {
+  font-size: 24px;
+  margin: 0;
+  font-family: "Forum", serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
